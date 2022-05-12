@@ -1,0 +1,12 @@
+﻿  Product.cpp
+C:\Users\scarl\source\repos\StorageProject\StorageProject\Product.cpp(140,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\scarl\source\repos\StorageProject\StorageProject\Product.cpp(184,25): warning C4099: 'Product': type name first seen using 'class' now seen using 'struct'
+C:\Users\scarl\source\repos\StorageProject\StorageProject\Product.h(27): message : see declaration of 'Product'
+C:\Users\scarl\source\repos\StorageProject\StorageProject\Product.cpp(190,25): warning C4099: 'Product': type name first seen using 'class' now seen using 'struct'
+C:\Users\scarl\source\repos\StorageProject\StorageProject\Product.h(27): message : see declaration of 'Product'
+C:\Users\scarl\source\repos\StorageProject\StorageProject\Product.cpp(196,25): warning C4099: 'Product': type name first seen using 'class' now seen using 'struct'
+C:\Users\scarl\source\repos\StorageProject\StorageProject\Product.h(27): message : see declaration of 'Product'
+  Storage.cpp
+  StorageProject.cpp
+  Generating Code...
+  StorageProject.vcxproj -> C:\Users\scarl\source\repos\StorageProject\x64\Debug\StorageProject.exe
