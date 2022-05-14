@@ -44,11 +44,8 @@ public:
 	Product& operator=(const Product& other);
 	~Product();
 
-	void readInfo(const char* fileName);
 	void addProduct(const Product* storageCollection, int len, const char* fileName);
 	
-
-	void parseProduct(Product& currentProduct, const char* line);
 	void out();
 	Product& maxObj(Product* products, const char* fileName);
 
