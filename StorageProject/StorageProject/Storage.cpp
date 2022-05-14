@@ -2,6 +2,30 @@
 #include "Product.h"
 #include "Storage.h"
 
+Storage::Storage() : products(nullptr), countProducts(0) {}
+
+Storage::Storage(Product* products, int countProducts) {
+	this->products = products;
+	this->countProducts = countProducts;
+}
+
+void Storage::copy(const Storage& other) {
+	countProducts = other.countProducts;
+}
+
+void Storage::free() {
+	delete[] products;
+	countProducts = 0;
+}
+
+Storage& Storage::operator=(const Storage& other) {
+	if (this != &other) {
+		free();
+		copy(other);
+	}
+	return *this;
+}
+
 void Storage::printStorage() {
 	for (int i = 0; i < countProducts; i++) {
 		products[i].print();
