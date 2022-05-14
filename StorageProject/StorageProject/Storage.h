@@ -10,7 +10,17 @@ class Storage  {
 	Product* products;
 	int countProducts;
 
+	void copy(const Storage& other);
+	void free();
+
 public:
+
+	Storage();
+	Storage(Product* products, int countProducts);
+	Storage(const Storage& other);
+	Storage& operator=(const Storage& other);
+	~Storage();
+
 	void printStorage();
 	void addProductToStorage(const char* name, Date expirationDate, Date data, const char* nameOfProducer, int amount, Place place, const char* comment, const char* fileName);
 	void takeProductFromStorage(char* name, int quantity, const char* fileName);
